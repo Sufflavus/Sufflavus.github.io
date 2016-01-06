@@ -21,6 +21,7 @@ show_social_icons:  false
 disqus_shortname: Tania
 
 # Social icons
+show_social_icons: true
 github_username: sufflavus
 bitbucket_username: Tata-sh
 stackoverflow_id: 1577895
