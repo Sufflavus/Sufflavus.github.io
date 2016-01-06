@@ -7,5 +7,5 @@ categories: jekyll pixyll
 published: true
 ---
 
-Hay there!
+Hey there!
 This is my first blog post ever :)
