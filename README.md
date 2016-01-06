@@ -1,2 +1,3 @@
-# sufflavus.github.io
-Personal blog http://sufflavus.github.io
+# Tatiana Shatilova's blog
+
+Based on [pixyll.com](http://www.pixyll.com).
