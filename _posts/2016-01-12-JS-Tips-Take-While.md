@@ -4,7 +4,7 @@ title:      JavaScript Tips: How to implement TakeWhile
 date:       2016-01-12
 summary:    Implementation of C# Enumerable methot TakeWhile in JavaScript.
 categories: JavaScript
-published:  false
+published:  true
 ---
 
 In this post I will describe the ways how [TakeWhile](https://msdn.microsoft.com/ru-ru/library/bb548775(v=vs.110).aspx) method maight be inplemented in JavaScript. I will consider 3 implementations of this function and compare their performance. 
@@ -30,6 +30,8 @@ As it is specified in [documentation](https://msdn.microsoft.com/ru-ru/library/b
 ...
 
 ### Implementation 1: Using *while*
+
+{% gist Sufflavus/0bc96d22e7007bc4aff7.js %}
 
 ```js
 function takeWhile(source, predicate) {
