@@ -9,5 +9,3 @@ published:  true
 
 Hey there!
 This is my first blog post ever :)
-
-{% gist Sufflavus/0bc96d22e7007bc4aff7 %}
