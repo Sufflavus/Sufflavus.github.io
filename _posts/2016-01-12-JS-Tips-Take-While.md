@@ -31,7 +31,7 @@ As it is specified in [documentation](https://msdn.microsoft.com/ru-ru/library/b
 
 ### Implementation 1: Using *while*
 
-{% gist Sufflavus/0bc96d22e7007bc4aff7 take-while-implementation-1.js %}
+{% gist Sufflavus/0bc96d22e7007bc4aff7 %}
 
 ```js
 function takeWhile(source, predicate) {
