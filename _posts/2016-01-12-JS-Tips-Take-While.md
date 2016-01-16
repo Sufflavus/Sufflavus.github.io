@@ -15,9 +15,7 @@ Lets discribe syntax of function takeWhile we are going to implement.
 
 #### Syntax
 
-```js
-takeWhile(source, predicate)
-```
+{% gist Sufflavus/399e4454506d91924192 %}
 
 #### Parameters
 - *source* - the sequence to return elements from
@@ -26,96 +24,21 @@ takeWhile(source, predicate)
 #### Description
 As it is specified in [documentation](https://msdn.microsoft.com/ru-ru/library/bb548775(v=vs.110).aspx), function takeWhile should return elements from a sequence as long as a specified condition is true.
 
-#### Examples
-...
+#### Example
+
+{% gist Sufflavus/a450bc8a858658e7ee37 %}
 
 ### Implementation 1: Using *while*
 
 {% gist Sufflavus/0bc96d22e7007bc4aff7 %}
 
-```js
-function takeWhile(source, predicate) {
-    var length = source.length;
-    var i = 0;
-
-    while(i < length && predicate(source[i], i)) {
-        i++;
-    }
-
-    return source.slice(0, i);
-}
-
-var source = [1, 2, 5, 0, -2, 2, 8];
-var predicate = x => x > 0;
-var length = source.length;
-
-var i = 0;
-while(i < length && predicate(source[i], i)) {
-    i++;
-}
-
-var result = source.slice(0, i);
-
-console.log(result);
-```
-
 ### Implementation 2: Using *for*
 
-```js
-function takeWhile(source, predicate) {
-    var stopIndex = source.length;
-
-    for(var i = 0, length = source.length; i < length; i++ ) {
-        if(!predicate(source[i], i)) {
-            stopIndex = i;
-            break;
-        }
-    }
-
-    return source.slice(0, stopIndex);
-}
-
-var source = [1, 2, 5, 0, -2, 2, 8];
-var predicate = x => x > 0;
-var stopIndex = source.length;
-
-for(var i = 0, length = source.length; i < length; i++ ) {
-    if(!predicate(source[i], i)) {
-        stopIndex = i;
-        break;
-    }
-}
-
-var result = source.slice(0, stopIndex);
-
-console.log(result);
-```
+{% gist Sufflavus/ab836bcbec1514994f8e %}
 
 ### Implementation 3: Using *some*
 
-```js
-function takeWhile(source, predicate) {
-    var stopIndex = source.length;
-
-    source.some(function(n, index) {
-        return predicate(n, index) ? false : ((stopIndex = index), true);
-    });
-
-    return source.slice(0, stopIndex);
-}
-
-var source = [1, 2, 5, 0, -2, 2, 8];
-var predicate = x => x > 0;
-var stopIndex = source.length;
-
-source.some(function(n, index) {
-    return predicate(n, index) ? false : ((stopIndex = index), true);
-});
-
-var result = source.slice(0, stopIndex);
-
-console.log(result);
-```
+{% gist Sufflavus/3a0015453a127a20f578 %}
 
 
 If you find any mistakes or have any suggestions please feel free to let me know. Thanks.
