@@ -1,8 +1,8 @@
 ---
 layout:     post
-title:      JavaScript Tips: How to implement TakeWhile
+title:      "JavaScript Tips: How to implement TakeWhile"
 date:       2016-01-12
-summary:    The first post with jekyll, github pages and pixyll.
+summary:    Implementation of C# Enumerable method TakeWhile in JavaScript.
 categories: JavaScript
 published:  true
 ---
