@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      Hey!
+title:      JavaScript Tips: How to implement TakeWhile
 date:       2016-01-12
 summary:    The first post with jekyll, github pages and pixyll.
 categories: JavaScript
