@@ -4,7 +4,7 @@ title:      "JavaScript Tips: How to implement TakeWhile"
 date:       2016-01-12
 summary:    Implementation of C# Enumerable method TakeWhile in JavaScript.
 categories: JavaScript
-published:  false
+published:  true
 ---
 
 In this post I will describe the ways how [TakeWhile](https://msdn.microsoft.com/ru-ru/library/bb548775(v=vs.110).aspx) method maight be inplemented in JavaScript. I will consider 3 implementations of this function and compare their performance. 
@@ -15,16 +15,9 @@ Lets discribe syntax of function takeWhile we are going to implement.
 
 #### Syntax
 
-> takeWhile(source, predicate);
-
-#### Syntax
-
 ```js
 takeWhile(source, predicate);
 ```
-#### Syntax
-
-{% gist Sufflavus/399e4454506d91924192 %}
 
 #### Parameters
 - *source* - the sequence to return elements from
