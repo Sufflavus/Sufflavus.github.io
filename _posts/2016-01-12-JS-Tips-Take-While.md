@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:      "JavaScript Tips: How to implement TakeWhile"
+title:      How to implement TakeWhile in JavaScript
 date:       2016-01-12
 summary:    Implementation of C# Enumerable method TakeWhile in JavaScript.
 categories: JavaScript
@@ -34,9 +34,13 @@ As it is specified in [documentation](https://msdn.microsoft.com/ru-ru/library/b
 
 {% gist Sufflavus/0bc96d22e7007bc4aff7 %}
 
+In the first implementation I check each element of the *source* array while the *predicate* condition is true for the current element. When element is checked it is pushed in the result array.
+
 ### Implementation 2: Using *for*
 
 {% gist Sufflavus/ab836bcbec1514994f8e %}
+
+In the second implementation I go throw array and look for an index of the first element which does not fulfill the *predicate* condition. When index is found I call slice function to get the result array.
 
 ### Implementation 3: Using *some*
 
