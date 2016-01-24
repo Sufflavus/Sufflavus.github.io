@@ -52,6 +52,14 @@ I found this one realization in the [Internet](link). This one implementation se
 
 ### Performance
 
+For tests I used an array of integers and a simple predicate:
+
+{% gist Sufflavus/c4b34d7f4bd524cfc773 %}
+
+Here is a result of performance [tests](http://jsperf.com/takewhile/2):
+
+As we can see the fastest implementation is the first one.
+
 ### Conclusion
 
 
