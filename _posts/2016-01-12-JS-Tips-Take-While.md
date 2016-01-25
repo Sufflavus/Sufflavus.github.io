@@ -58,9 +58,6 @@ For tests I used an array of integers and a simple predicate:
 
 Here is a result of performance [tests](http://jsperf.com/takewhile/2):
 
-As we can see the fastest implementation is the first one.
-
-### Conclusion
-
+As we can see the fastest implementation is the first one. The performance is kinda different and depend on browser.
 
 If you find any mistakes or have any suggestions please feel free to let me know. Thanks.
