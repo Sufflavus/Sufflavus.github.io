@@ -4,7 +4,7 @@ title:      How to implement TakeWhile in JavaScript
 date:       2016-01-12
 summary:    Implementation of C# Enumerable method TakeWhile in JavaScript.
 categories: JavaScript
-published:  false
+published:  true
 ---
 
 In this post I will describe the ways how [TakeWhile](https://msdn.microsoft.com/ru-ru/library/bb548775(v=vs.110).aspx) method maight be inplemented in JavaScript. I will consider 3 implementations of this function and compare their performance. 
@@ -57,6 +57,8 @@ For tests I used an array of integers and a simple predicate:
 {% gist Sufflavus/c4b34d7f4bd524cfc773 %}
 
 Here is a result of performance [tests](http://jsperf.com/takewhile/2):
+
+![performance](/images/posts/take-while-performance.png)
 
 As we can see the fastest implementation is the first one. The performance is kinda different and depend on browser.
 
