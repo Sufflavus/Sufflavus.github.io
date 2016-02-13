@@ -48,7 +48,7 @@ In the second implementation I go throw array and look for an index of the first
 
 Here I use *some* to find the first element which does not fulfill the *predicate* condition. When index is found I call slice function to get the result array.
 
-I found this one realization in the [Internet](link). This one implementation seems to me pretty interesting and unusual so I desided to consider it as well.
+I found this one realization in the Internet. This one implementation seems to me pretty interesting and unusual so I desided to consider it as well.
 
 ### Performance
 
