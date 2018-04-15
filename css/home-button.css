@@ -1,0 +1,9 @@
+.home-button {
+    margin-top: 30px;
+    background-color: #892276;
+    color: #FFF8E1;
+}
+
+.home-button__pulse {
+    border: 1px solid #892276;
+}

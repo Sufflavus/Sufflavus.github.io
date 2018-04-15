@@ -1,0 +1,144 @@
+.project-tile {
+    display: inline-block;
+    width: 250px;
+    height: 260px;
+    box-sizing: border-box;
+    padding: 16px;
+    margin: 15px;
+    vertical-align: top;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 4px 4px 14px -2px rgba(0,0,0,0.75);
+    transition: all .5s ease;
+    transition-property: all;
+}
+
+.project-tile__image {
+    width: 100%;
+    height: 160px;
+    border-radius: 3px;
+    background-repeat: no-repeat;
+}
+
+.project-tile__info {
+    margin-top: 8px;
+    text-align: left;
+    color: #605F5F;
+}
+
+.project-tile__name {
+    margin-bottom: 4px;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.project-tile__description {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.project-tile__image_geek-data {
+    background-color: #222222;
+    background-image: url(images/projects/geek-data.png);
+    background-size: cover;
+}
+
+.project-tile__image_heat-map {
+    box-sizing: border-box;
+    border: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+    background-image: url(images/projects/heat-map.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_meteorite-landing {
+    background-color: #9EC7F3;
+    background-image: url(images/projects/meteorite-landing.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_crawler-game {
+    background-color: #222425;
+    background-image: url(images/projects/roguelike-dungeon-crawler-game.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_game-of-life {
+    background-color: #2F1B28;
+    background-image: url(images/projects/game-of-life.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_mint {
+    box-sizing: border-box;
+    border: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+    background-image: url(images/projects/mint.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_linq-es-6 {
+    background-color: #2F3334;
+    background-image: url(images/projects/es6.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_open-source {
+    background-color: #000000;
+    background-image: url(images/projects/open-source.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__image_private-apps {
+    background-color: #FFFFFF;
+    background-image: url(images/projects/web.jpg);
+    background-position: center 10px;
+    background-size: 90%;
+}
+
+.project-tile__header_heat-map {
+    background-color: #8AADC1;
+}
+
+.project-tile__header_meteorite-landing {
+    background-color: #98C4EF;
+}
+
+.project-tile__header_crawler-game {
+    background-color: #222425;
+}
+
+.project-tile__header_game-of-life {
+    background-color: #33202B;
+}
+
+.project-tile__header_linq-es-6 {
+    background-color: #2B2F30;
+}
+
+.project-tile__header_open-source {
+    background-color: #000000;
+}
+
+.project-tile__header_private-apps {
+    background-color: #98C4EF;
+}
+
+.project-tile__image_fake {
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: #3E1667;
+    color: #FFFFFF;
+    font-size: 15px;
+    line-height: 20px;
+}

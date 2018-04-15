@@ -1,0 +1,24 @@
+.oops-panel {
+    margin-top: 40px;
+    margin-left: 20px;
+    font-size: 35px;
+}
+
+.oops-panel__header {
+    margin-bottom: 50px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.oops-panel__attention {
+    margin-top: 20px;
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width: 900px) {
+    .oops-panel {
+        display: none;
+    }
+}
