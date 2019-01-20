@@ -7,57 +7,79 @@
         <title>Tatiana Shatilova's Portfolio</title>
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="css/layout.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/nav/nav.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/nav/nav-404.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/nav/menu.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        
-        <link href="css/cracked.css" type="text/css" rel="stylesheet"/>
-        <link href="css/oops-panel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/error-panel.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        
-        <link href="css/button.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        <link href="css/home-button.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        
+        <link href="css/reset.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/layout.css" type="text/css" rel="stylesheet" media="screen,projection"/> 
+
         <script src="https://use.fontawesome.com/21bd0e91c3.js"></script>
     </head>
-    <body class="layout__full-page layout__404">
-        <div class="cracked"></div>
-        <nav class="nav nav__404">
-            <ul class="menu">
-                <li class="menu__item">
-                    <a class="menu__link" href="index.html">About</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="projects.html">Projects</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="skills.html">Skills</a>
-                </li>
-                <li class="menu__item">
-                    <a class="menu__link" href="contacts.html">Contacts</a>
-                </li>
-            </ul>
-        </nav>
-        <section class="layout__section layout__404">
-            <div class="oops-panel">
-                <div class="oops-panel__header">OOPS!</div>
-                <div>you broke</div>
-                <div class="oops-panel__attention">everything.</div>
+
+    <body id="home">
+    
+        <header class="layout__header">
+            <nav class="nav">
+                <ul class="nav__items-list">
+                    <li class="nav__item" id="workNavItem">
+                        <a class="nav__link" href="index.html#work">work</a>
+                    </li>
+                    <li class="nav__item" id="aboutNavItem">
+                        <a class="nav__link" href="index.html#about">about</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="logo">
+                <a class="logo__link" href="index.html">tatiana shatilova</a>
             </div>
-            <div class="error-panel__large-page">
-                <div class="error-panel__error-code error-panel__error-code__large-page">404</div>
-                <div class="error-panel__error-text error-panel__error-text__large-page">not<br/>found</div>
+            <div class="social">
+                <ul class="social__btns-list">
+                    <li class="social__item">
+                        <a class="social__link" title="github" rel="nofollow" href="https://github.com/Sufflavus" target="_blank">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" title="bitbucket" rel="nofollow" href="https://bitbucket.org/Sufflava/" target="_blank">
+                            <i class="fa fa-bitbucket"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" title="codepen" rel="nofollow" href="https://codepen.io/sufflavus" target="_blank">
+                            <i class="fa fa-codepen"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" title="linkedin" rel="nofollow" href="https://www.linkedin.com/in/shatilova-t" target="_blank">
+                            <i class="fa fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a class="social__link" title="mail" href="mailto:tatashat@gmail.com">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
+                </ul>
             </div>
-            <div class="error-panel__small-page">
-                <div class="error-panel__error-code">404</div>
-                <div class="error-panel__error-text">not found</div>
-                <a class="button home-button" href="index.html">
-                    <i class="button__pulse home-button__pulse"></i>
-                    <i class="fa fa-home fa-2x" aria-hidden="true"></i>
-                </a>
-            </div>
-        </section>
+        </header>        
+        
+        <main class="layour__content">
+            <section class="not-found">
+                <div class="not-found__wrapper">
+                    <div class="not-found__title">404</div>
+                <div class="not-found__sub-title">Ooops!</div>
+                <div class="not-found__text">Page not found.</div>
+                <div class="btn-home-wrapper">
+                    <a class="btn-home" title="mail" href="index.html">
+                        <i class="fa fa-home"></i>
+                    </a>
+                </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="layout__footer">
+            <div>© <span id="year"></span> Tatiana Shatilova. All rights reserved.</div>
+        </footer>
+
+        <script src="js/common.js"></script> 
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -65,8 +87,9 @@
             m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
             
-            //ga('create', 'UA-92225342-1', 'auto');
-            //ga('send', 'pageview');
+            ga('create', 'UA-92225342-1', 'auto');
+            ga('send', 'pageview');
         </script>
+
     </body>
 </html>

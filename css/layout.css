@@ -1,149 +1,473 @@
-html,
+html, 
 body {
-    min-width: 300px;
-    padding: 0;
-    margin: 0;
-    scrollbar-base-color: #DBE0E8;        
-    scrollbar-track-color: #AFB4BC;
-    scrollbar-arrow-color: #DBE0E8;  
-    scrollbar-3dlight-color: #DBE0E8;
-    scrollbar-highlight-color: #DBE0E8;
-    scrollbar-shadow-color: #DBE0E8;
-    scrollbar-dark-shadow-color: #DBE0E8;
-}
-
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: #DBE0E8;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: #AFB4BC;
-}
-
-html.layout__full-page,
-body.layout__full-page {
+    background: #c1d4e5;
     height: 100%;
+    min-width: 350px;
 }
 
-.layout {
-    background-color: #CDD2DA;
-    color: #062271;
-    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-    font-size: 22.4px;
-    line-height: 36px;
-    letter-spacing: 1px;
-}
-
-.layout__content_display_flex {
+.layout__header {
+    width: 100%;
+    height: 70px;
+    min-width: 350px;
+    padding: 0 3%;
+    z-index: 5;
+    position: fixed;
     display: flex;
-    flex-direction: column;
-    height: 100%;
-}
-
-.layout__content_display_fill-all {
-    position: relative;
-    min-height: 100%;
-}
-
-.layout__section {
-    box-sizing: border-box;
-    width: 930px;
-    min-width: 300px;
-    min-height: 500px;
-    margin: 0 auto;
-    clear: both;
-}
-
-.layout__about {
-    flex: 1 1 auto;
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    width: auto;
+    background-color: rgb(101, 122, 158);
+    color: #ffffff;
 }
 
-.layout__projects {
-    width: 850px;
-    padding: 20px 0;
-    font-size: 0;
+.nav {
+    width: 30%;
+}
+
+.nav__items-list {
+    list-style-type: 0;
+}
+
+.nav__item {
+    float: left;
+    padding-right: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+}
+
+.nav__item_active {
+    font-weight: 700;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.logo {
+    width: 40%;
+    padding: 0 5%;
+    flex: 1;
     text-align: center;
 }
 
-.layout__skills {
-    width: 840px;
-    padding-top: 20px;
-    padding-bottom: 100px;
+.logo__link {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 27px;
+    letter-spacing: 1px;
+    font-family: ftnk;
+    font-style: normal;
+    font-weight: 700;
 }
 
-.layout__contacts {
-    flex: 1 1 auto;
+.social {
+    width: 30%;
+    text-align: right;
+}
+
+.social__btns-list {
+    list-style-type: 0;
+}
+
+.social__item {
+    float: right;
+    padding-left: 20px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    list-style: none;
+}
+
+.social__link {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.layour__content {
+    padding: 70px 0;
+    height: 100%;
+}
+
+.bogus-img {
+    height: 100%;
+    background-image: url(images/lake.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bogus-img__content {
+    width: 100%;
+    height: 100%;
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    color: rgb(274, 115, 150);
+}
+
+.bogus-img__wrapper {
+    width: 100%;
+    padding: 0 10px;
+}
+
+.bogus-img__title {
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.bogus-img__hint {
+    font-size: 30px;
+    text-align: center;
+}
+
+.section-title {
+    padding-top: 90px;
+    text-align: center;
+    font-size: 30px;
+    color: #445a6f;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.projects-list {
+    margin: 0 auto;
+    width: 970px;
+    padding: 70px 0 0 0;
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 }
 
-.layout__404 {
-    margin: 0;
-    width: 1100px;
-    position: relative;
+.project-tile {
+    margin: 1px;
+    width: 320px;
+    height: 250px;
+    display: inline-block;
+    text-decoration: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-@media only screen and (min-width: 0px) and (max-width: 550px) {
-    .layout__section {
-        display: block;
-        width: 100%;
+.project-tile__placeholder {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(130, 199, 185, 0.5);
+    color: #ffffff;
+    opacity: 0;
+    transition: opacity 0.15s ease 0s;
+}
+
+.project-tile__placeholder:hover {
+    opacity: 1;
+}
+
+.project-tile__info {
+    text-align: center;
+}
+
+.project-tile__name {
+    margin-bottom: 4px;
+    line-height: 27px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.project-tile__description {
+    font-size: 15px;
+    line-height: 17px;
+}
+
+.project-tile__geek-data {
+    background-color: #222222;
+    background-image: url(images/projects/geek-data-1.png);
+}
+
+.project-tile__heat-map {
+    box-sizing: border-box;
+    border: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+    background-image: url(images/projects/heat-map-1.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__meteorite-landing {
+    background-color: #9EC7F3;
+    background-image: url(images/projects/meteorite-landing-1.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__crawler-game {
+    background-color: #222425;
+    background-image: url(images/projects/roguelike-dungeon-crawler-game-1.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__game-of-life {
+    background-color: #2F1B28;
+    background-image: url(images/projects/game-of-life-1.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__mint {
+    border: 1px solid #F0F0F0;
+    background-color: #FFFFFF;
+    background-image: url(images/projects/mint-1.png);
+    background-size: 60%;
+    background-position: center center;
+}
+
+.project-tile__linq-es-6 {
+    background-color: #2F3334;
+    background-image: url(images/projects/es6.svg);
+    background-size: 60%;
+    background-position: center center;
+}
+
+.project-tile__open-source {
+    background-color: #000000;
+    background-image: url(images/projects/open-source.png);
+    background-size: contain;
+    background-position: center center;
+}
+
+.project-tile__private-apps {
+    background-color: #FFFFFF;
+    background-image: url(images/projects/web.jpg);
+    background-position: center 10px;
+    background-size: 90%;
+}
+
+.project-tile__image_fake {
+    height: 100%;
+    padding: 10px;
+    line-height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-content: center; 
+    text-align: center;
+    font-size: 25px;
+    background-color: rgb(130, 199, 185);
+    color: #FFFFFF;
+}
+
+.about__introduction {
+    margin: 0 auto;
+    width: 700px;
+    padding-top: 70px;
+    font-size: 20px;
+    color: #445a6f;
+}
+
+.skills-list {
+    margin: 0 auto;
+    width: 970px;
+    padding: 70px 0 140px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.skill-tile {
+    margin: 5px;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    text-decoration: none;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.skill-tile__react {
+    background-image: url(images/skills/react.svg);
+}
+
+.skill-tile__redux {
+    background-color: #ffffff;
+    background-image: url(images/skills/redux.svg);
+    background-size: 80%;
+    background-position: center center;
+}
+
+.skill-tile__js {
+    background-image: url(images/skills/javascript.svg);
+}
+
+.skill-tile__html {
+    background-color: #ffffff;
+    background-image: url(images/skills/html5.svg);
+    background-size: 85%;
+    background-position: center center;
+}
+
+.skill-tile__css {
+    background-color: #ffffff;
+    background-image: url(images/skills/css3.svg);
+    background-size: 60%;
+    background-position: center center;
+}
+
+.skill-tile__less {
+    background-color: #ffffff;
+    background-image: url(images/skills/less.svg);
+    background-size: 90%;
+    background-position: center center;
+}
+
+.skill-tile__d3 {
+    background-color: #ffffff;
+    background-image: url(images/skills/d3.svg);
+    background-size: 70%;
+    background-position: center center;
+}
+
+.skill-tile__jasmine {
+    background-color: #ffffff;
+    background-image: url(images/skills/jasmine.svg);
+    background-size: 90%;
+    background-position: center center;
+}
+
+.skill-tile__asp {
+    background-color: #ffffff;
+    background-image: url(images/skills/asp-net.png);
+    background-size: 90%;
+    background-position: center center;
+}
+
+.skill-tile__csharp {
+    background-color: #ffffff;
+    background-image: url(images/skills/c-sharp.png);
+    background-size: 90%;
+    background-position: center center;
+}
+
+.skill-tile__sql {
+    background-color: #ffffff;
+    background-image: url(images/skills/sql.png);
+    background-size: 90%;
+    background-position: center center;
+}
+
+.contact {
+    margin: 70px 0 0 140px;
+}
+
+.layout__footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    min-width: 350px;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    background-color: rgba(37, 38, 42, 0.94);
+    color: #ffffff;
+}
+
+.not-found {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.not-found__wrapper {
+    width: 100%;
+    padding: 0 10px;
+    color: #445a6f;
+}
+
+.not-found__title {
+    font-size: 200px;
+    font-weight: 700px;
+    color: #445a6f;
+    text-align: center;
+}
+
+.not-found__sub-title {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.not-found__text {
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.btn-home-wrapper {
+    text-align: center;
+}
+
+.btn-home {
+    font-size: 30px;
+    color: #445a6f;
+}
+
+@media only screen and (min-width: 711px) and (max-width: 1030px) {
+    .bogus-img__title {
+        font-size: 50px;
+    }
+
+    .bogus-img__hint {
+        font-size: 25px;
+    }
+
+    .projects-list,
+    .skills-list {
+        width: 660px;
+    }
+
+    .about__introduction {
+        width: 600px;
     }
 }
 
-@media only screen and (min-width: 0) and (max-width: 930px) {
-    .layout__contacts {
-        width: 100%;
+@media only screen and (max-width: 710px) {
+    .nav__item,
+    .social__link {
+        font-size: 15px;
     }
-}
 
-@media only screen and (min-width: 720px) and (max-width: 940px) {
-    .layout__skills {
-        width: 640px;
+    .logo__link {
+        font-size: 20px;
     }
-}
 
-@media only screen and (min-width: 520px) and (max-width: 719px) {
-    .layout__skills {
-        width: 420px;
+    .bogus-img__title {
+        font-size: 30px;
     }
-}
 
-@media only screen and (min-width: 0) and (max-width: 519px) {
-    .layout__skills {
-        width: 200px;
+    .bogus-img__hint {
+        font-size: 20px;
     }
-}
 
-@media only screen and (min-width: 650px) and (max-width: 880px) {
-    .layout__projects {
-        width: 630px;
+    .projects-list,
+    .skills-list {
+        width: 340px;
     }
-}
 
-@media only screen and (min-width: 0) and (max-width: 649px) {
-    .layout__projects {
-        width: auto;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-    html.layout__404,
-    body.layout__404 {
-        height: auto;
-    }
-    
-    .layout__404 {
-        width: auto;
-        height: auto;
-        min-width: 300px;
-        min-height: auto;
+    .about__introduction {
+        width: 300px;
+        font-size: 17px;
     }
 }
