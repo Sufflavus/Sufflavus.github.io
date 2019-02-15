@@ -61,16 +61,16 @@ body {
     font-weight: 700;
 }
 
-.social {
+.contacts {
     width: 30%;
     text-align: right;
 }
 
-.social__btns-list {
+.contacts__btns-list {
     list-style-type: 0;
 }
 
-.social__item {
+.contacts__item {
     float: right;
     padding-left: 20px;
     font-size: 20px;
@@ -79,9 +79,13 @@ body {
     list-style: none;
 }
 
-.social__link {
+.contacts__link {
     text-decoration: none;
     color: #ffffff;
+}
+
+.contacts__link:hover {
+    color: rgb(274, 115, 150);
 }
 
 .layour__content {
@@ -123,7 +127,8 @@ body {
 }
 
 .section-title {
-    padding-top: 90px;
+    margin-top: 45px;
+    padding-top: 45px;
     text-align: center;
     font-size: 30px;
     color: #445a6f;
@@ -134,7 +139,7 @@ body {
 .projects-list {
     margin: 0 auto;
     width: 970px;
-    padding: 70px 0 0 0;
+    padding: 45px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -264,18 +269,32 @@ body {
     color: #FFFFFF;
 }
 
+.section-title__about {
+    background-color: #AFC8DD;
+}
+
+.about {
+    background-color: #AFC8DD;
+}
+
 .about__introduction {
     margin: 0 auto;
     width: 700px;
-    padding-top: 70px;
+    padding-top: 45px;
     font-size: 20px;
+    line-height: 30px;
     color: #445a6f;
+    text-align: center;
+}
+
+.skills {
+    padding: 45px 0 140px 0;
+    background-color: #AFC8DD;
 }
 
 .skills-list {
     margin: 0 auto;
     width: 970px;
-    padding: 70px 0 140px 0;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -378,7 +397,7 @@ body {
     display: flex;
     align-items: center;
     font-size: 14px;
-    background-color: rgba(37, 38, 42, 0.94);
+    background-color: rgba(20,24,31, 0.8);
     color: #ffffff;
 }
 
@@ -422,6 +441,10 @@ body {
 .btn-home {
     font-size: 30px;
     color: #445a6f;
+}
+
+.btn-home:hover {
+    color: rgb(274, 115, 150);
 }
 
 @media only screen and (min-width: 711px) and (max-width: 1030px) {

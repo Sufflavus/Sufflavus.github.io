@@ -15,7 +15,7 @@
 
     <body id="home">
     
-        <header class="layout__header">
+        <header class="layout__header" id="navHeader">
             <nav class="nav">
                 <ul class="nav__items-list">
                     <li class="nav__item" id="workNavItem">
@@ -29,30 +29,30 @@
             <div class="logo">
                 <a class="logo__link" href="index.html">tatiana shatilova</a>
             </div>
-            <div class="social">
-                <ul class="social__btns-list">
-                    <li class="social__item">
-                        <a class="social__link" title="github" rel="nofollow" href="https://github.com/Sufflavus" target="_blank">
+            <div class="contacts">
+                <ul class="contacts__btns-list">
+                    <li class="contacts__item">
+                        <a class="contacts__link" title="github" rel="nofollow" href="https://github.com/Sufflavus" target="_blank">
                             <i class="fa fa-github"></i>
                         </a>
                     </li>
-                    <li class="social__item">
-                        <a class="social__link" title="bitbucket" rel="nofollow" href="https://bitbucket.org/Sufflava/" target="_blank">
+                    <li class="contacts__item">
+                        <a class="contacts__link" title="bitbucket" rel="nofollow" href="https://bitbucket.org/Sufflava/" target="_blank">
                             <i class="fa fa-bitbucket"></i>
                         </a>
                     </li>
-                    <li class="social__item">
-                        <a class="social__link" title="codepen" rel="nofollow" href="https://codepen.io/sufflavus" target="_blank">
+                    <li class="contacts__item">
+                        <a class="contacts__link" title="codepen" rel="nofollow" href="https://codepen.io/sufflavus" target="_blank">
                             <i class="fa fa-codepen"></i>
                         </a>
                     </li>
-                    <li class="social__item">
-                        <a class="social__link" title="linkedin" rel="nofollow" href="https://www.linkedin.com/in/shatilova-t" target="_blank">
+                    <li class="contacts__item">
+                        <a class="contacts__link" title="linkedin" rel="nofollow" href="https://www.linkedin.com/in/shatilova-t" target="_blank">
                             <i class="fa fa-linkedin"></i>
                         </a>
                     </li>
-                    <li class="social__item">
-                        <a class="social__link" title="mail" href="mailto:tatashat@gmail.com">
+                    <li class="contacts__item">
+                        <a class="contacts__link" title="mail" href="mailto:tatashat@gmail.com">
                             <i class="fa fa-envelope-o"></i>
                         </a>
                     </li>
@@ -154,7 +154,7 @@
                     
                 </div>
             </article>
-            <article class="section-title" id="about">about</article>
+            <article class="section-title section-title__about" id="about">about</article>
             <article class="about">
                 <div class="about__introduction">
                     This is a selection of works of Tatiana Shatilova. Currently working in beautiful Finland. 
@@ -163,24 +163,32 @@
                     My technical expertise is in accessibility, user experience, performance tuning and cross-browser compatibility using:
                 </div>
             </article>
-            <article class="skills-list">
-                <div class="skill-tile skill-tile__react" title="React"></div>
-                <div class="skill-tile skill-tile__redux" title="Redux"></div>
-                <div class="skill-tile skill-tile__js" title="JavaScript"></div>
-                <div class="skill-tile skill-tile__html" title="HTML 5"></div>
-                <div class="skill-tile skill-tile__css" title="CSS 3"></div>
-                <div class="skill-tile skill-tile__less" title="less"></div>
-                <div class="skill-tile skill-tile__d3" title="d3.js"></div>
-                <div class="skill-tile skill-tile__jasmine" title="jasmine"></div>
-                <div class="skill-tile skill-tile__asp" title="ASP.NET MVC 5"></div>
-                <div class="skill-tile skill-tile__csharp" title="C#"></div>
-                <div class="skill-tile skill-tile__sql" title="SQL"></div>
+            <article class="skills">
+                <div class="skills-list">
+                    <div class="skill-tile skill-tile__react" title="React"></div>
+                    <div class="skill-tile skill-tile__redux" title="Redux"></div>
+                    <div class="skill-tile skill-tile__js" title="JavaScript"></div>
+                    <div class="skill-tile skill-tile__html" title="HTML 5"></div>
+                    <div class="skill-tile skill-tile__css" title="CSS 3"></div>
+                    <div class="skill-tile skill-tile__less" title="less"></div>
+                    <div class="skill-tile skill-tile__d3" title="d3.js"></div>
+                    <div class="skill-tile skill-tile__jasmine" title="jasmine"></div>
+                    <div class="skill-tile skill-tile__asp" title="ASP.NET MVC 5"></div>
+                    <div class="skill-tile skill-tile__csharp" title="C#"></div>
+                    <div class="skill-tile skill-tile__sql" title="SQL"></div>
+                </div>
             </article>
         </main>
 
         <footer class="layout__footer">
             <div>© <span id="year"></span> Tatiana Shatilova. All rights reserved.</div>
         </footer>
+
+        <script
+            src="https://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous">
+        </script>
 
         <script src="js/common.js"></script> 
 
