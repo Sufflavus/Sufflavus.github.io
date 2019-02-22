@@ -8,7 +8,7 @@
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="css/reset.css?v=1" type="text/css" rel="stylesheet" media="screen,projection"/> 
-        <link href="css/layout.css?v=1" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/layout.css?v=2" type="text/css" rel="stylesheet" media="screen,projection"/> 
 
         <script src="https://use.fontawesome.com/21bd0e91c3.js"></script>
     </head>
@@ -76,7 +76,9 @@
             <div>© <span id="year"></span> Tatiana Shatilova. All rights reserved.</div>
         </footer>
 
-        <script src="js/common.js?v=1"></script> 
+        <script>
+            document.getElementById("year").textContent = (new Date()).getFullYear();
+        </script> 
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

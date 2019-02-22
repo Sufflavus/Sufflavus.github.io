@@ -1,18 +1,17 @@
 (function ($) {
-    var navHeaderHeight = $("#navHeader")[0].offsetHeight;
+    var navHeaderHeight = $ && $("#navHeader")[0].offsetHeight;
     var $aboutSection = document.getElementById("about");
-    var $workNavItem = $("#workNavItem");
-    var $abautNavItem = $("#aboutNavItem");
+    var $workNavItem = $ && $("#workNavItem");
+    var $abautNavItem = $ && $("#aboutNavItem");
     var navActiveClassName = "nav__item_active";
 
-    document.getElementById("year").textContent=(new Date()).getFullYear();
+    document.getElementById("year").textContent = (new Date()).getFullYear();
 
-    if($aboutSection) {
-        onScroll();
-        window.addEventListener('scroll', onScroll);
+    onScroll();
+    window.addEventListener('scroll', onScroll);
 
-        $(".nav__link").click(goToLink);
-    }
+    $(".nav__link").click(goToLink);
+
 
     function goToLink() {
         var href = $(this).attr("href");
