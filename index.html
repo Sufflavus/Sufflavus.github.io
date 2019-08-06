@@ -7,8 +7,11 @@
         <title>Tatiana Shatilova's Portfolio</title>
         
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-        <link href="css/reset.css?v=1" type="text/css" rel="stylesheet" media="screen,projection"/> 
-        <link href="css/layout.css?v=2" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/reset.css?v=3" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/layout.css?v=3" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/contact-envelope.css?v=3" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/project-tile.css?v=3" type="text/css" rel="stylesheet" media="screen,projection"/> 
+        <link href="css/skills-set.css?v=3" type="text/css" rel="stylesheet" media="screen,projection"/> 
 
         <script src="https://use.fontawesome.com/21bd0e91c3.js"></script>
     </head>
@@ -24,44 +27,18 @@
                     <li class="nav__item" id="aboutNavItem">
                         <a class="nav__link" href="index.html#about">about</a>
                     </li>
+                    <li class="nav__item" id="contactsNavItem">
+                        <a class="nav__link" href="index.html#contacts">contacts</a>
+                    </li>
                 </ul>
             </nav>
             <div class="logo">
                 <a class="logo__link" href="index.html">tatiana shatilova</a>
             </div>
-            <div class="contacts">
-                <ul class="contacts__btns-list">
-                    <li class="contacts__item">
-                        <a class="contacts__link" title="github" rel="nofollow" href="https://github.com/Sufflavus" target="_blank">
-                            <i class="fa fa-github"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" title="bitbucket" rel="nofollow" href="https://bitbucket.org/Sufflava/" target="_blank">
-                            <i class="fa fa-bitbucket"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" title="codepen" rel="nofollow" href="https://codepen.io/sufflavus" target="_blank">
-                            <i class="fa fa-codepen"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" title="linkedin" rel="nofollow" href="https://www.linkedin.com/in/shatilova-t" target="_blank">
-                            <i class="fa fa-linkedin"></i>
-                        </a>
-                    </li>
-                    <li class="contacts__item">
-                        <a class="contacts__link" title="mail" href="mailto:tatashat@gmail.com">
-                            <i class="fa fa-envelope-o"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
         </header>        
         
         <main class="layour__content">
-            <article class="bogus-img">
+            <div class="bogus-img">
                 <div class="bogus-img__content">
                     <div class="bogus-img__wrapper">
                         <div class="bogus-img__title">
@@ -71,9 +48,9 @@
                         <div class="bogus-img__hint">Scroll down to see my work!</div>
                     </div>
                 </div>
-            </article>
-            <article class="section-title section-title__work" id="work">Work</article>
-            <article class="projects" id="work">
+            </div>
+            <div class="section-title section-title__work" id="work">Work</div>
+            <div class="projects" id="work">
                 <div class="projects-list">
                     <a class="project-tile project-tile__geek-data" rel="nofollow"
                         href="https://geekdataproject.firebaseapp.com/" target="_blank">
@@ -155,17 +132,17 @@
                         
                     </div>
                 </div>
-            </article>
-            <article class="section-title section-title__about" id="about">about</article>
-            <article class="about">
+            </div>
+            <div class="section-title section-title__about" id="about">about</div>
+            <div class="about">
                 <div class="about__introduction">
                     This is a selection of works of Tatiana Shatilova. Currently working in beautiful Finland. 
                     I'm an experienced hard-working Web developer specialised on front-end.
                     Have high code quality standards. Enjoy being a part of a productive experienced team; equally comfortable working on my own projects.
                     My technical expertise is in accessibility, user experience, performance tuning and cross-browser compatibility using:
                 </div>
-            </article>
-            <article class="skills">
+            </div>
+            <div class="skills">
                 <div class="skills-set">
                     <div class="skill-tile" title="JavaScript">
                         <div class="skill-tile__rotator_1">
@@ -236,20 +213,43 @@
                         </div>
                     </div>
                 </div>
-                <!--<div class="skills-list">
-                    <div class="skill-tile skill-tile__react" title="React"></div>
-                    <div class="skill-tile skill-tile__redux" title="Redux"></div>
-                    <div class="skill-tile skill-tile__js" title="JavaScript"></div>
-                    <div class="skill-tile skill-tile__html" title="HTML 5"></div>
-                    <div class="skill-tile skill-tile__css" title="CSS 3"></div>
-                    <div class="skill-tile skill-tile__less" title="less"></div>
-                    <div class="skill-tile skill-tile__d3" title="d3.js"></div>
-                    <div class="skill-tile skill-tile__jasmine" title="jasmine"></div>
-                    <div class="skill-tile skill-tile__asp" title="ASP.NET MVC 5"></div>
-                    <div class="skill-tile skill-tile__csharp" title="C#"></div>
-                    <div class="skill-tile skill-tile__sql" title="SQL"></div>
-                </div>-->
-            </article>
+            </div>
+            <div class="section-title section-title__contacts" id="contacts">contacts</div>
+            <div class="contacts">
+                <div class="contact-envelope">
+                    <div class="contact-envelope__content">
+                        <div class="contact-envelope__stamp"></div>
+                        <div class="contact-envelope__header">
+                            Get in touch
+                        </div>
+                        <div class="contact-envelope__message">
+                            If you have any questions, suggestions or even just want to say Hi, please feel free to get in touch with me! :)
+                        </div>
+                        <div class="ccontact-envelope__buttons">
+                            <a class="button contact-button contact-button--email" href="mailto:tatashat@gmail.com">
+                                <i class="button__pulse contact-button__pulse"></i>
+                                <i class="fa fa-envelope-o fa-2x"></i>
+                            </a>
+                            <a class="button contact-button contact-button--linkedin" rel="nofollow"
+                                href="https://us.linkedin.com/pub/tatiana-shatilova/81/94/260" target="_blank">
+                                <i class="button__pulse contact-button__pulse"></i>
+                                <i class="fa fa-linkedin fa-2x"></i>
+                            </a>
+                            <br class="contact-envelope__buttons-separator"/>
+                            <a class="button contact-button contact-button--bitbucket" rel="nofollow"
+                                href="https://bitbucket.org/Sufflava/" target="_blank">
+                                <i class="button__pulse contact-button__pulse"></i>
+                                <i class="fa fa-bitbucket fa-2x"></i>
+                            </a>
+                            <a class="button contact-button contact-button--codepen" rel="nofollow"
+                                href="https://codepen.io/sufflavus" target="_blank">
+                                <i class="button__pulse contact-button__pulse"></i>
+                                <i class="fa fa-codepen fa-2x"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer class="layout__footer">

@@ -2,13 +2,13 @@ html,
 body {
     background-color: #AFC8DD;
     height: 100%;
-    min-width: 350px;
+    min-width: 200px;
 }
 
 .layout__header {
     width: 100%;
     height: 70px;
-    min-width: 350px;
+    min-width: 200px;
     padding: 0 3%;
     z-index: 5;
     position: fixed;
@@ -61,33 +61,6 @@ body {
     font-weight: 700;
 }
 
-.contacts {
-    width: 30%;
-    text-align: right;
-}
-
-.contacts__btns-list {
-    list-style-type: 0;
-}
-
-.contacts__item {
-    float: right;
-    padding-left: 20px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    list-style: none;
-}
-
-.contacts__link {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.contacts__link:hover {
-    color: rgb(274, 115, 150);
-}
-
 .layour__content {
     padding: 70px 0;
     height: 100%;
@@ -137,7 +110,9 @@ body {
 }
 
 .section-title__work,
-.projects {
+.projects,
+.section-title__contacts,
+.contacts {
     background: #c1d4e5;
 }
 
@@ -150,129 +125,6 @@ body {
     align-items: center;
     justify-content: center;
     background: #c1d4e5;
-}
-
-.project-tile {
-    margin: 1px;
-    width: 320px;
-    height: 250px;
-    display: inline-block;
-    text-decoration: none;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.project-tile__placeholder {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(130, 199, 185, 0.5);
-    color: #ffffff;
-    opacity: 0;
-    transition: opacity 0.15s ease 0s;
-}
-
-.project-tile__placeholder:hover {
-    opacity: 1;
-}
-
-.project-tile__info {
-    text-align: center;
-}
-
-.project-tile__name {
-    margin-bottom: 4px;
-    line-height: 27px;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.project-tile__description {
-    font-size: 15px;
-    line-height: 17px;
-}
-
-.project-tile__geek-data {
-    background-color: #222222;
-    background-image: url(images/projects/geek-data-1.png);
-}
-
-.project-tile__heat-map {
-    box-sizing: border-box;
-    border: 1px solid #F0F0F0;
-    background-color: #FFFFFF;
-    background-image: url(images/projects/heat-map-1.png);
-    background-size: contain;
-    background-position: center center;
-}
-
-.project-tile__meteorite-landing {
-    background-color: #9EC7F3;
-    background-image: url(images/projects/meteorite-landing-1.png);
-    background-size: contain;
-    background-position: center center;
-}
-
-.project-tile__crawler-game {
-    background-color: #222425;
-    background-image: url(images/projects/roguelike-dungeon-crawler-game-1.png);
-    background-size: contain;
-    background-position: center center;
-}
-
-.project-tile__game-of-life {
-    background-color: #2F1B28;
-    background-image: url(images/projects/game-of-life-1.png);
-    background-size: contain;
-    background-position: center center;
-}
-
-.project-tile__mint {
-    border: 1px solid #F0F0F0;
-    background-color: #FFFFFF;
-    background-image: url(images/projects/mint-1.png);
-    background-size: 60%;
-    background-position: center center;
-}
-
-.project-tile__linq-es-6 {
-    background-color: #2F3334;
-    background-image: url(images/projects/es6.svg);
-    background-size: 60%;
-    background-position: center center;
-}
-
-.project-tile__open-source {
-    background-color: #000000;
-    background-image: url(images/projects/open-source.png);
-    background-size: contain;
-    background-position: center center;
-}
-
-.project-tile__private-apps {
-    background-color: #FFFFFF;
-    background-image: url(images/projects/web.jpg);
-    background-position: center 10px;
-    background-size: 90%;
-}
-
-.project-tile__image_fake {
-    height: 100%;
-    padding: 10px;
-    line-height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center; 
-    align-content: center; 
-    text-align: center;
-    font-size: 25px;
-    background-color: rgb(130, 199, 185);
-    color: #FFFFFF;
 }
 
 .section-title__about {
@@ -295,7 +147,7 @@ body {
 }
 
 .skills {
-    padding: 45px 0 140px 0;
+    padding: 45px 0;
     background-color: #AFC8DD;
     width: 840px;
     margin: 0 auto;
@@ -311,79 +163,8 @@ body {
     justify-content: center;
 }
 
-.skill-tile__react {
-    background-image: url(images/skills/react.svg);
-}
-
-.skill-tile__redux {
-    background-color: #ffffff;
-    background-image: url(images/skills/redux.svg);
-    background-size: 80%;
-    background-position: center center;
-}
-
-.skill-tile__js {
-    background-image: url(images/skills/javascript.svg);
-}
-
-.skill-tile__html {
-    background-color: #ffffff;
-    background-image: url(images/skills/html5.svg);
-    background-size: 85%;
-    background-position: center center;
-}
-
-.skill-tile__css {
-    background-color: #ffffff;
-    background-image: url(images/skills/css3.svg);
-    background-size: 60%;
-    background-position: center center;
-}
-
-.skill-tile__less {
-    background-color: #ffffff;
-    background-image: url(images/skills/less.svg);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__d3 {
-    background-color: #ffffff;
-    background-image: url(images/skills/d3.svg);
-    background-size: 70%;
-    background-position: center center;
-}
-
-.skill-tile__jasmine {
-    background-color: #ffffff;
-    background-image: url(images/skills/jasmine.svg);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__asp {
-    background-color: #ffffff;
-    background-image: url(images/skills/asp-net.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__csharp {
-    background-color: #ffffff;
-    background-image: url(images/skills/c-sharp.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__sql {
-    background-color: #ffffff;
-    background-image: url(images/skills/sql.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.contact {
-    margin: 70px 0 0 140px;
+.contacts {
+    padding: 45px 0 140px 0;
 }
 
 .layout__footer {
@@ -391,59 +172,13 @@ body {
     bottom: 0;
     width: 100%;
     height: 70px;
-    min-width: 350px;
+    min-width: 200px;
     padding: 0 2%;
     display: flex;
     align-items: center;
     font-size: 14px;
     background-color: rgba(20,24,31, 0.8);
     color: #ffffff;
-}
-
-.not-found {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-}
-
-.not-found__wrapper {
-    width: 100%;
-    padding: 0 10px;
-    color: #445a6f;
-}
-
-.not-found__title {
-    font-size: 200px;
-    font-weight: 700px;
-    color: #445a6f;
-    text-align: center;
-}
-
-.not-found__sub-title {
-    padding-bottom: 10px;
-    text-align: center;
-    font-size: 30px;
-    font-weight: 600;
-}
-
-.not-found__text {
-    text-align: center;
-    font-size: 20px;
-    padding-bottom: 10px;
-}
-
-.btn-home-wrapper {
-    text-align: center;
-}
-
-.btn-home {
-    font-size: 30px;
-    color: #445a6f;
-}
-
-.btn-home:hover {
-    color: rgb(274, 115, 150);
 }
 
 @media only screen and (min-width: 711px) and (max-width: 1030px) {
@@ -492,330 +227,6 @@ body {
     }
 }
 
-.skills-set {
-    position: relative;
-    margin-bottom: 40px;
-    margin-left: 100px;
-    flex-shrink: 0;
-}
-
-.skills-set__items {
-    margin: 20px 0;
-}
-
-.skills-set__separator:nth-of-type(1),
-.skills-set__separator:nth-of-type(2),
-.skills-set__separator:nth-of-type(4),
-.skills-set__separator:nth-of-type(5),
-.skills-set__separator:nth-of-type(6),
-.skills-set__separator:nth-of-type(7),
-.skills-set__separator:nth-of-type(8) {
-    display: none;
-}
-
-@media only screen and (min-width: 720px) and (max-width: 940px) {
-    .skills-set__separator:nth-of-type(2),
-    .skills-set__separator:nth-of-type(5),
-    .skills-set__separator:nth-of-type(7) {
-        display: block;
-    }
-    
-    .skills-set__separator:nth-of-type(3) {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 520px) and (max-width: 719px) {
-    .skills-set__separator:nth-of-type(1),
-    .skills-set__separator:nth-of-type(3),
-    .skills-set__separator:nth-of-type(4),
-    .skills-set__separator:nth-of-type(6),
-    .skills-set__separator:nth-of-type(7),
-    .skills-set__separator:nth-of-type(8) {
-        display: block;
-    }
-    
-    .skills-set__separator:nth-of-type(2),
-    .skills-set__separator:nth-of-type(5) {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 0) and (max-width: 519px) {
-    .skills-set {
-        margin-left: 0;
-        text-align: center;
-    }
-    
-    .skills-set__separator:nth-of-type(n) {
-        display: none;
-    }
-}
-
-.skill-tile {
-    visibility: hidden;
-    display: inline-block;
-    width: 200px;
-    height: 232px;
-    overflow: hidden;
-    margin: 0 0 -50px 6px;
-    -o-transition:.5s;
-    -ms-transition:.5s;
-    -moz-transition:.5s;
-    -webkit-transition:.5s;
-    -webkit-transform: rotate(120deg);
-    -moz-transform: rotate(120deg);
-    -ms-transform: rotate(120deg);
-    -o-transform: rotate(120deg);
-    transform: rotate(120deg);
-    transition-property: all;
-}
-
-.skill-tile__rotator_1 {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    -webkit-transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    transform: rotate(-60deg);
-}
-
-.skill-tile__rotator_2 {
-    position: relative;
-    visibility: visible;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: rotate(-60deg);
-    -moz-transform: rotate(-60deg);
-    -ms-transform: rotate(-60deg);
-    -o-transform: rotate(-60deg);
-    transform: rotate(-60deg);
-    background-color: #FF9A00;
-    background-position: 50%;
-    background-repeat: no-repeat;
-}
-
-.skill-tile__rotator_2:after {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 0%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.4);
-    -webkit-transition: none;
-    -moz-transition: none;
-    -ms-transition: none;
-    -o-transition: none;
-    transition: none;
-    content: "";
-}
-
-.skill-tile__rotator_2:hover:after {
-    width: 120%;
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition: all 0.5s ease-out;
-    -ms-transition: all 0.5s ease-out;
-    -o-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
-    background-color: rgba(255,255,255,0);
-}
-
-.skill-tile:nth-of-type(4) {
-    margin-left: -100px;
-}
-
-.skill-tile__image_js {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/js-white.png");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_jquery {
-    background-color: #373737;
-    background-image: url("images/skills/jquery.png");
-}
-
-.skill-tile__image_html {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/html5.svg");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_css {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/css3.svg");
-    background-size: auto 150px;
-}
-
-.skill-tile__image_less {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/less.svg");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_asp {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/asp-net.png");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_ko {
-    background-color: #890E0C;
-    background-image: url("images/skills/ko.png");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_angular {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/angular.svg");
-}
-
-.skill-tile__image_react {
-    background-image: url("images/skills/react.svg");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_d3 {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/d3.svg");
-    background-size: 130px;
-}
-
-.skill-tile__image_jasmine {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/jasmine-labeled.png");
-    background-size: 180px;
-}
-
-.skill-tile__image_csharp {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/csharp.png");
-    background-size: 180px auto;
-}
-
-.skill-tile__image_sql {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/sql.png");
-    background-size: 150px auto;
-}
-
-.skill-tile__image_mongodb {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/mongodb.svg");
-    background-size: 160px auto;
-}
-
-.skill-tile__image_nodejs {
-    background-color: #FFFFFF;
-    background-image: url("images/skills/nodejs-black.png");
-}
-
-
-.skill-tile__image_react {
-    background-image: url(images/skills/react1.svg);
-    background-color: #FFFFFF;
-}
-
-.skill-tile__image_redux {
-    background-color: #ffffff;
-    background-image: url(images/skills/redux.svg);
-    background-size: 80%;
-    background-position: center center;
-}
-
-.skill-tile__image_js_1 {
-    background-image: url(images/skills/javascript.svg);
-}
-
-.skill-tile__image_html {
-    background-color: #ffffff;
-    background-image: url(images/skills/html5.svg);
-    background-size: 75%;
-    background-position: center center;
-}
-
-.skill-tile__image_css {
-    background-color: #ffffff;
-    background-image: url(images/skills/css3.svg);
-    background-size: 55%;
-    background-position: center center;
-}
-
-.skill-tile__image_less {
-    background-color: #ffffff;
-    background-image: url(images/skills/less.svg);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__image_d3 {
-    background-color: #ffffff;
-    background-image: url(images/skills/d3.svg);
-    background-size: 70%;
-    background-position: center center;
-}
-
-.skill-tile__image_jasmine {
-    background-color: #ffffff;
-    background-image: url(images/skills/jasmine.svg);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__image_asp {
-    background-color: #ffffff;
-    background-image: url(images/skills/asp-net.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__image_csharp {
-    background-color: #ffffff;
-    background-image: url(images/skills/c-sharp.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-.skill-tile__image_sql {
-    background-color: #ffffff;
-    background-image: url(images/skills/sql.png);
-    background-size: 90%;
-    background-position: center center;
-}
-
-@media only screen and (min-width: 720px) and (max-width: 940px) {
-    .skill-tile:nth-of-type(3),
-    .skill-tile:nth-of-type(8) {
-        margin-left: -100px;
-    }
-    
-    .skill-tile:nth-of-type(4) {
-        margin-left: 5px;
-    }
-}
-
-@media only screen and (min-width: 520px) and (max-width: 719px) {
-    .skill-tile:nth-of-type(2),
-    .skill-tile:nth-of-type(5),
-    .skill-tile:nth-of-type(8) {
-        margin-left: -100px;
-    }
-    
-    .skill-tile:nth-of-type(3),
-    .skill-tile:nth-of-type(4) {
-        margin-left: 5px;
-    }
-}
-
-@media only screen and (min-width: 0) and (max-width: 519px) {
-    .skill-tile:nth-of-type(n) {
-        margin-left: 0;
-        margin-bottom: 0;
-    }
-}
-
 @media only screen and (min-width: 720px) and (max-width: 940px) {
     .skills {
         width: 640px;
@@ -831,5 +242,16 @@ body {
 @media only screen and (min-width: 0) and (max-width: 519px) {
     .skills {
         width: 200px;
+    }
+}
+
+@media only screen and (min-width: 0) and (max-width: 349px) {
+    .projects-list {
+        width: 200px;
+    }
+
+    .about__introduction {
+        width: 200px;
+        font-size: 15px;
     }
 }
