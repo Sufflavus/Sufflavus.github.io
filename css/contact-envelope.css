@@ -6,12 +6,13 @@
     margin: 0 auto;
     background-color: #F8F7F3;
     background-image: repeating-linear-gradient(135deg, 
-        #D5181F 0px, #D5181F 50px, 
+        #FF5C85 0px, #FF5C85 50px, 
         transparent 50px, transparent 80px, 
-        #0F5DA5 80px, #0F5DA5 130px, 
+        #28569A 80px, #28569A 130px, 
         transparent 130px, transparent 160px);
     box-shadow: 0 14px 7px -12px rgba(0, 0, 0, 0.898);
     flex-shrink: 0;
+    color: #334353;
 }
 
 .contact-envelope:before {
@@ -72,7 +73,7 @@
     border: none;
     border-radius: 100%;
     margin: 0;
-    background-color: #C5C5C5;
+    background-color: #B2C4D3;
     color: #FFFFFF;
     text-decoration: none;
     font-size: 14px;
@@ -101,7 +102,7 @@
     -o-transition-timing-function: cubic-bezier(0.53,-0.67,0.73,0.74);
     -webkit-transition-timing-function: cubic-bezier(0.53,-0.67,0.73,0.74);
     transition-timing-function: cubic-bezier(0.53,-0.67,0.73,0.74);
-    border: 1px solid #C5C5C5;
+    border: 1px solid #B2C4D3;
     border-radius: 100%;
     background: none;
     opacity: 1;
@@ -122,12 +123,12 @@
 
 .contact-button {
     margin: 20px 20px 0 0;
-    background-color: #C5C5C5;
+    background-color: #B2C4D3;
     color: #FFFFFF;
 }
 
 .contact-button__pulse {
-    border: 1px solid #C5C5C5;
+    border: 1px solid #B2C4D3;
 }
 
 @media only screen and (min-width: 551px) and (max-width: 930px) {
