@@ -24,6 +24,7 @@
         var titleId = href.substring(index);
         var $title = $($(titleId)[0]);
         $('html,body').animate({ scrollTop: $title.offset().top - navHeaderHeight }, 'slow');
+        $title.addClass(navActiveClassName);
         return false;
     }
 

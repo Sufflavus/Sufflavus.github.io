@@ -14,6 +14,9 @@ body {
     z-index: 5;
     position: fixed;
     display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-flow: space-between;
     align-items: center;
     background-color: rgb(101, 122, 158);
     color: #ffffff;
@@ -29,7 +32,7 @@ body {
 
 .nav__item {
     float: left;
-    padding-right: 20px;
+    padding-left: 20px;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -47,6 +50,7 @@ body {
 
 .logo {
     flex: 1;
+    margin-right: 30px;
 }
 
 .logo__link {
@@ -54,7 +58,6 @@ body {
     color: #ffffff;
     font-size: 27px;
     letter-spacing: 1px;
-    font-family: ftnk;
     font-style: normal;
     font-weight: 700;
 }
@@ -198,11 +201,6 @@ body {
 }
 
 @media only screen and (max-width: 710px) {
-    .nav__item,
-    .social__link {
-        font-size: 15px;
-    }
-
     .logo__link {
         font-size: 20px;
     }
