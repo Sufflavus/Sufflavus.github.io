@@ -1,8 +1,13 @@
 (function ($) {
     var navHeaderHeight = $ && $("#navHeader")[0].offsetHeight;
     var $aboutSection = document.getElementById("about");
+    var $contactsSection = document.getElementById("contacts");
+
+    var $navItems = $ && $(".nav__items-list li");
     var $workNavItem = $ && $("#workNavItem");
     var $abautNavItem = $ && $("#aboutNavItem");
+    var $contactsNavItem = $ && $("#contactsNavItem");
+
     var navActiveClassName = "nav__item_active";
 
     document.getElementById("year").textContent = (new Date()).getFullYear();
@@ -26,13 +31,20 @@
     function onScroll() {
         var windowHeight = document.documentElement.clientHeight;
         var aboutTopPosition = $aboutSection.getBoundingClientRect().top;
+        var contactsTopPosition = $contactsSection.getBoundingClientRect().top;
 
-        if(aboutTopPosition < windowHeight/3) {
-            $workNavItem.removeClass(navActiveClassName);
+        $navItems.removeClass(navActiveClassName);
+
+        if(aboutTopPosition < windowHeight/3 && contactsTopPosition > windowHeight/3){
             $abautNavItem.addClass(navActiveClassName);
-        } else {
-            $workNavItem.addClass(navActiveClassName);
-            $abautNavItem.removeClass(navActiveClassName);
+            return;
         }
+
+        if(contactsTopPosition < windowHeight/3) {
+            $contactsNavItem.addClass(navActiveClassName);
+            return;
+        }
+
+        $workNavItem.addClass(navActiveClassName);
     }
 })($);
