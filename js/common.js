@@ -1,9 +1,12 @@
 (function ($) {
     var navHeaderHeight = $ && $("#navHeader")[0].offsetHeight;
+
+    var $workSection = document.getElementById("work");
     var $aboutSection = document.getElementById("about");
     var $contactsSection = document.getElementById("contacts");
 
     var $navItems = $ && $(".nav__items-list li");
+    var $homeNavItem = $ && $("#homeNavItem");
     var $workNavItem = $ && $("#workNavItem");
     var $abautNavItem = $ && $("#aboutNavItem");
     var $contactsNavItem = $ && $("#contactsNavItem");
@@ -31,10 +34,18 @@
 
     function onScroll() {
         var windowHeight = document.documentElement.clientHeight;
+
+        var workTopPosition = $workSection.getBoundingClientRect().top;
         var aboutTopPosition = $aboutSection.getBoundingClientRect().top;
         var contactsTopPosition = $contactsSection.getBoundingClientRect().top;
 
         $navItems.removeClass(navActiveClassName);
+console.log(workTopPosition)
+
+        if(workTopPosition > windowHeight/3){
+            $homeNavItem.addClass(navActiveClassName);
+            return;
+        }
 
         if(aboutTopPosition < windowHeight/3 && contactsTopPosition > windowHeight/3){
             $abautNavItem.addClass(navActiveClassName);

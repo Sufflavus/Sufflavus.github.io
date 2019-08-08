@@ -24,6 +24,9 @@
             </div>
             <nav class="nav">
                 <ul class="nav__items-list">
+                    <li class="nav__item" id="homeNavItem">
+                        <a class="nav__link" href="index.html#home">home</a>
+                    </li>
                     <li class="nav__item" id="workNavItem">
                         <a class="nav__link" href="index.html#work">work</a>
                     </li>
@@ -38,7 +41,7 @@
         </header>        
         
         <main class="layour__content">
-            <div class="bogus-img">
+            <div class="bogus-img" id="home">
                 <div class="bogus-img__content">
                     <div class="bogus-img__wrapper">
                         <div class="bogus-img__title">
@@ -236,15 +239,15 @@
                                 <i class="fa fa-linkedin fa-2x"></i>
                             </a>
                             <br class="contact-envelope__buttons-separator"/>
-                            <a class="button contact-button contact-button--bitbucket" rel="nofollow"
-                                href="https://bitbucket.org/Sufflava/" target="_blank">
-                                <i class="button__pulse contact-button__pulse"></i>
-                                <i class="fa fa-bitbucket fa-2x"></i>
-                            </a>
                             <a class="button contact-button contact-button--codepen" rel="nofollow"
                                 href="https://codepen.io/sufflavus" target="_blank">
                                 <i class="button__pulse contact-button__pulse"></i>
                                 <i class="fa fa-codepen fa-2x"></i>
+                            </a>
+                            <a class="button contact-button contact-button--bitbucket" rel="nofollow"
+                                href="https://bitbucket.org/Sufflava/" target="_blank">
+                                <i class="button__pulse contact-button__pulse"></i>
+                                <i class="fa fa-bitbucket fa-2x"></i>
                             </a>
                         </div>
                     </div>
@@ -262,7 +265,7 @@
             crossorigin="anonymous">
         </script>
 
-        <script src="js/common.js?v=5"></script> 
+        <script src="js/common.js?v=6"></script> 
 
         <script>
             (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
